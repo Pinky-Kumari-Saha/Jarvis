@@ -37,3 +37,11 @@ $(document).ready(function () {
 
 });
 
+//mic button click event
+$("#MicBtn").click(function () { 
+    eel.playAssistantSound()
+    $("#oval").attr("hidden", true);
+    $("#siriwave").attr("hidden", false);
+    
+});
+
