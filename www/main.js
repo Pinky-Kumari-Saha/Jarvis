@@ -35,14 +35,28 @@ $(document).ready(function () {
         }
     });
 
+    //mic button click event
+    $("#MicBtn").click(function () { 
+        eel.playAssistantSound()
+        $("#oval").attr("hidden", true);
+        $("#siriwave").attr("hidden", false);
+        eel.allCommands()()
+    
+    });
+
+    // //shortcut key
+    // function doc_keyUp(e){
+
+    //     if (e.key =='j'&& e.metaKey){
+    //         eel.playAssistantSound()
+    //         $("#Oval").attr("hidden",true);
+    //         $("#SiriWave").attr("hidden",false);
+    //         eel.allCommands()()
+    //     }
+
+    // }
+    // document.addEventListener('keyup',doc_keyUp,false);
+
 });
 
-//mic button click event
-$("#MicBtn").click(function () { 
-    eel.playAssistantSound()
-    $("#oval").attr("hidden", true);
-    $("#siriwave").attr("hidden", false);
-    eel.allCommands()
-    
-});
 
