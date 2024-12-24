@@ -40,22 +40,22 @@ $(document).ready(function () {
         eel.playAssistantSound()
         $("#oval").attr("hidden", true);
         $("#siriwave").attr("hidden", false);
-        eel.allCommands()()
+        eel.allCommands()
     
     });
 
-    // //shortcut key
-    // function doc_keyUp(e){
+    //shortcut key
+    function doc_keyUp(e){
 
-    //     if (e.key =='j'&& e.metaKey){
-    //         eel.playAssistantSound()
-    //         $("#Oval").attr("hidden",true);
-    //         $("#SiriWave").attr("hidden",false);
-    //         eel.allCommands()()
-    //     }
+        if (e.key ==='j'&& e.metaKey){
+            eel.playAssistantSound()
+            $("#Oval").attr("hidden",true);
+            $("#SiriWave").attr("hidden",false);
+            eel.allCommands()
+        }
 
-    // }
-    // document.addEventListener('keyup',doc_keyUp,false);
+    }
+    document.addEventListener('keyup', doc_keyUp, false);
 
 });
 
